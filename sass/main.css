@@ -1,1 +1,40 @@
-/*# sourceMappingURL=main.css.map */
+.social-icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-img {
+  max-height: 50px;
+}
+
+.max-width-10 {
+  max-width: 20rem;
+}
+
+.background-image-container {
+  background-image: url("../img/gymbros_fondo_sitio_claro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.input-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#mySlider.carousel {
+  background-color: black;
+}
+
+#mySlider .carousel-inner .carousel-item img {
+  max-width: 70%;
+  max-height: 70%;
+  /*width: 80%;
+  height: 80%;*/
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */
