@@ -1,40 +1,57 @@
+// Define variables
+$icon-size: 30px;
+$max-logo-height: 50px;
+$max-width-10: 20rem;
+$background-image-url: '../img/gymbros_fondo_sitio_claro.png';
+$input-container-max-width: 300px;
+$carousel-bg-color: black;
+$carousel-img-max-size: 70%;
+
+// Mixin para la fuente
+@mixin font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Estilos
 .social-icon-img {
-    width: 30px;
-    height: 30px;
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.logo-img {
+  max-height: $max-logo-height;
+}
+
+.max-width-10 {
+  max-width: $max-width-10;
+}
+
+.background-image-container {
+  background-image: url('#{$background-image-url}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.input-container {
+  max-width: $input-container-max-width;
+  margin: 0px auto;
+}
+
+#mySlider.carousel {
+  background-color: $carousel-bg-color;
+}
+
+#mySlider {
+  .carousel-inner {
+    .carousel-item img {
+      max-width: $carousel-img-max-size;
+      max-height: $carousel-img-max-size;
+      margin: 0px auto;
+    }
   }
-  
-  .logo-img {
-    max-height: 50px;
-  }
-  
-  .max-width-10 {
-    max-width: 20rem;
-  }
-  
-  .background-image-container {
-    background-image: url('../img/gymbros_fondo_sitio_claro.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-  }
-  
-  .input-container {
-    max-width: 300px; 
-    margin: 0px auto; 
-  }
-  
-  #mySlider.carousel {
-    background-color: black;
-  }
-  
-  #mySlider .carousel-inner .carousel-item img {
-    max-width: 70%;
-    max-height: 70%;
-    /*width: 80%;
-    height: 80%;*/
-    margin: 0px auto;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
+}
+
+body {
+  @include font-montserrat;
+}
