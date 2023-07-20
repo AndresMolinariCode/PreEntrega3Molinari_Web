@@ -55,3 +55,30 @@ $carousel-img-max-size: 70%;
 body {
   @include font-montserrat;
 }
+
+
+//aplicacion de animaciones
+.btn-danger:hover {
+  transform: scale(1.1); /* Escala el botón al 110% de su tamaño original */
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.social-icon-img:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.logo-letters:hover {
+  transform: translateX(20px); /* Desplaza la imagen hacia la derecha 20px */
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.navbar-nav .nav-item:hover {
+  transform: scale(1.1); /* Escala el item del menú al 110% de su tamaño original */
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.media:hover iframe {
+  transform: translateY(-10px); /* Mueve el video hacia arriba 10px */
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+}
