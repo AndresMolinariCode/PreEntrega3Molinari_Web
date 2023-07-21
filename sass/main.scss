@@ -1,4 +1,4 @@
-// Define variables
+// Definición de variables
 $icon-size: 30px;
 $max-logo-height: 50px;
 $max-width-10: 20rem;
@@ -57,34 +57,33 @@ body {
 }
 
 
-//aplicacion de animaciones
+//Aplicacion de animaciones
 .btn-danger:hover {
-  transform: scale(1.1); /* Escala el botón al 110% de su tamaño original */
-  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
 }
 
 .social-icon-img:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
-  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
 }
 
 .logo-letters:hover {
-  transform: translateX(20px); /* Desplaza la imagen hacia la derecha 20px */
-  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  transform: translateX(20px); 
+  transition: transform 0.3s; 
 }
 
 .navbar-nav .nav-item:hover {
-  transform: scale(1.1); /* Escala el item del menú al 110% de su tamaño original */
-  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
 }
 
 .media:hover iframe {
-  transform: translateY(-10px); /* Mueve el video hacia arriba 10px */
-  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos */
+  transform: translateY(-10px); 
+  transition: transform 0.3s; 
 }
 
 //icono flotante de WhatsApp
-/* Estilos para el icono flotante de WhatsApp */
 /* Estilos para el icono flotante de WhatsApp */
 .floating-icon {
   position: fixed;
@@ -99,19 +98,13 @@ body {
   justify-content: center;
   background-color: green;
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-decoration: none;
 }
 
 .whatsapp-icon img {
-  width: 24px;
-  height: 24px;
-}
-
-.whatsapp-text {
-  margin-top: 5px;
-  color: white;
-  font-size: 14px;
+  width: 34px;
+  height: 34px;
 }
