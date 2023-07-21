@@ -30,7 +30,11 @@ $carousel-img-max-size: 70%;
   background-image: url('#{$background-image-url}');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 700px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //height: 100vh;
 }
 
 .input-container {
@@ -56,6 +60,10 @@ body {
   @include font-montserrat;
 }
 
+.row {
+  margin-top: 30px;
+  max-width: 100%;
+}
 
 //Aplicacion de animaciones
 .btn-danger:hover {
@@ -77,6 +85,11 @@ body {
   transform: scale(1.1); 
   transition: transform 0.3s; 
 }
+
+//doy margen para que el efecto sobre el menu no afecte el ancho de la página
+.navbar-nav li.nav-item {
+  margin-right: 10px;
+} 
 
 .media:hover iframe {
   transform: translateY(-10px); 
