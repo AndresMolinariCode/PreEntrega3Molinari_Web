@@ -82,22 +82,24 @@ body {
 }
 
 .navbar-nav .nav-item:hover {
-  transform: scale(1.1); 
+  transform: scaleX(1.1); 
   transition: transform 0.3s; 
 }
 
-//doy margen para que el efecto sobre el menu no afecte el ancho de la página
-.navbar-nav li.nav-item {
-  margin-right: 10px;
-} 
+@keyframes rotateYAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 
-.media:hover iframe {
-  transform: translateY(-10px); 
-  transition: transform 0.3s; 
+.logo-imagen:hover {
+  animation: rotateYAnimation 1s linear; 
 }
 
 //icono flotante de WhatsApp
-/* Estilos para el icono flotante de WhatsApp */
 .floating-icon {
   position: fixed;
   bottom: 20px;
@@ -120,4 +122,18 @@ body {
 .whatsapp-icon img {
   width: 34px;
   height: 34px;
+}
+
+//doy margen para que el efecto sobre el menu no afecte el ancho de la página
+.navbar-nav {
+  margin-top: 20px;
+} 
+
+.navbar-nav li.nav-item {
+  margin-right: 20px;
+} 
+
+.media:hover iframe {
+  transform: translateY(-10px); 
+  transition: transform 0.3s; 
 }
