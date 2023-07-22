@@ -65,7 +65,6 @@ body {
   transition: transform 0.3s;
 }
 
-/*
 @keyframes rotateYAnimation {
   0% {
     transform: rotateY(0deg);
@@ -74,10 +73,10 @@ body {
     transform: rotateY(360deg);
   }
 }
-
 .logo-imagen:hover {
-  animation: rotateYAnimation 1s linear; 
-}*/
+  animation: rotateYAnimation 1s linear;
+}
+
 .floating-icon {
   position: fixed;
   bottom: 20px;
